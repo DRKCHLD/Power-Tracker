@@ -9,7 +9,7 @@
 
 body .section-one {
   color: white;
-  padding-left: 2em;
+  padding-left: 1em;
   padding-right: 2em;
   padding-top: 2em;
   background-color: #00ba73;
@@ -22,6 +22,10 @@ body .section-one nav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+body .section-one nav .bar {
+  display: none;
 }
 
 body .section-one nav label {
@@ -112,19 +116,64 @@ body .section-one .parent-container .sojourner-speech #features {
 }
 
 @media screen and (max-width: 600px) and (min-width: 280px) {
-  body body {
-    padding-left: 1em;
-    padding-right: 1em;
-  }
   body .section-one {
     padding-bottom: 11em;
+    padding-top: 1em;
   }
-  body .section-one nav ul {
-    display: none;
+  body .section-one nav .hamburger.active {
+    background-color: #00ba73;
+    z-index: 10;
+    position: fixed;
+    right: 0%;
+    top: 2%;
+  }
+  body .section-one nav .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  body .section-one nav .hamburger.active .bar:nth-child(1) {
+    -webkit-transform: translateY(8px) rotate(45deg);
+            transform: translateY(8px) rotate(45deg);
+  }
+  body .section-one nav .hamburger.active .bar:nth-child(3) {
+    -webkit-transform: translateY(-8px) rotate(-45deg);
+            transform: translateY(-8px) rotate(-45deg);
+  }
+  body .section-one nav .bar {
+    display: block;
+    background: white;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    width: 25px;
+    height: 2px;
+  }
+  body .section-one nav .nav-menu {
+    margin-top: -.5em;
+    margin-right: -2em;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    right: -100%;
+    position: fixed;
+    background-color: #00ba73;
+    height: 60vh;
+    width: 50%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 5px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  body .section-one nav .nav-menu li a {
+    color: black;
+  }
+  body .section-one nav .nav-menu.active {
+    right: 5%;
   }
   body .section-one .buttons {
     display: none;
@@ -143,7 +192,14 @@ body .section-one .parent-container .sojourner-speech #features {
     font-weight: 500;
   }
   body .parent-container .sojourner-speech #features {
-    padding-left: 4.8em;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body .parent-container .sojourner-speech #features p {
+    padding-left: 2em;
+    text-align: center;
   }
 }
 
@@ -298,14 +354,16 @@ body .section-two .companies-testimonies .tescos .tes-star {
     width: 100%;
   }
   body .section-two .phones #phone-two img {
-    margin-left: 1em;
+    margin-left: 2em;
+    margin-right: 2em;
     height: 200px;
     width: 210px;
   }
   body .section-two .phones #phone-one img {
     height: 200px;
     width: 200px;
-    margin-left: 1em;
+    margin-left: 2em;
+    margin-right: 2em;
   }
   body .section-two .register-button button {
     padding-left: 5.9em;

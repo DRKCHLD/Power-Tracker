@@ -14,13 +14,17 @@ body {
 
         color: white;
 
-        padding-left: 2em;
+        padding-left: 1em;
         padding-right: 2em;
         padding-top: 2em;
 
         background-color:rgba(0, 186, 115, 1);
         
         nav {
+
+          .bar {
+            display: none;
+          }
 
             display: flex;
             justify-content: space-between;
@@ -32,6 +36,8 @@ body {
                     text-decoration: none;
                     color: white;
                 }
+
+              
             }
 
             ul {
@@ -121,24 +127,76 @@ body {
     @media screen and (max-width:600px ) and (min-width:280px) {
 
 
-        body {
-
-            padding-left: 1em;
-            padding-right: 1em;
-        }
+      
         .section-one {
 
             padding-bottom: 11em;
 
+            padding-top: 1em;
+
 
             nav {
 
-                ul {
-
-                    display: none;
-
-                    flex-direction: column;
+                .hamburger.active{
+                    background-color: rgba(0, 186, 115, 1);
+                    z-index: 10;
+                    position: fixed;
+                    right: 0%;
+                    top: 2%;
                 }
+
+                .hamburger.active .bar:nth-child(2){
+                    opacity: 0;
+                }
+                .hamburger.active .bar:nth-child(1){
+                    transform: translateY(8px) rotate(45deg);
+                }
+                .hamburger.active .bar:nth-child(3){
+                    transform: translateY(-8px) rotate(-45deg);
+                }
+
+             .bar {
+
+              display: block;
+              background: white;
+              margin: 5px auto;
+              transition: all 0.3s ease-in-out;
+              width: 25px;
+              height: 2px;
+             }
+
+                .nav-menu {
+
+                  
+                    margin-top: -.5em;
+                    margin-right: -2em;
+                    transition: 0.3s ease-in-out;
+
+                    right: -100%;
+                    position: fixed;
+
+                   // display: none;
+                   background-color: rgba(0, 186, 115, 1);
+                  // padding: .9em;
+                   height:60vh ;
+                   width: 50%;
+                   justify-content: center;
+                   align-items: center;
+                   border-radius: 5px;
+                   
+                    flex-direction: column;
+
+                    li a {
+
+                        color: black;
+                    }
+                }
+
+                .nav-menu.active {
+
+                    right: 5%;
+                }
+
             }
 
             .buttons {
@@ -167,8 +225,15 @@ body {
 
                 #features {
 
-                    padding-left: 4.8em;
-                
+                    //
+                    text-align: center;
+                    align-items: center;
+
+                    p {
+                        padding-left: 2em;
+                       // padding-right: -3em;
+                        text-align: center;
+                    }
                 }
             }
         }
@@ -338,8 +403,9 @@ body {
                 
                 #phone-two img {
                 
-                   
-                    margin-left: 1em;
+                  // align-items: center;
+                    margin-left: 2em;
+                    margin-right: 2em;
                     height: 200px;
                     width: 210px;
                     
@@ -350,7 +416,8 @@ body {
                     
                       height: 200px;
                       width: 200px;
-                      margin-left: 1em;
+                      margin-left: 2em;
+                      margin-right: 2em;
                   }
 
                 
