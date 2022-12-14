@@ -178,7 +178,7 @@ body .section-two .texts {
 
 body .section-two .texts p {
   font-weight: 600;
-  font-size: 1em;
+  font-size: 1.6em;
 }
 
 body .section-two .register-button {
@@ -318,7 +318,7 @@ body .section-two .companies-testimonies .tescos .tes-star {
             align-items: center;
   }
   body .section-two .achievements p {
-    font-size: 2em;
+    font-size: 1.2em;
   }
   body .section-two .achievements h1 {
     font-size: 3em;
