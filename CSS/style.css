@@ -1,0 +1,473 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&family=Roboto:wght@300;400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Montserrat';
+}
+
+body .section-one {
+  color: white;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-top: 2em;
+  background-color: #00ba73;
+}
+
+body .section-one nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .section-one nav label {
+  font-weight: 600;
+}
+
+body .section-one nav label a {
+  text-decoration: none;
+  color: white;
+}
+
+body .section-one nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 30px;
+}
+
+body .section-one nav ul li {
+  list-style-type: none;
+}
+
+body .section-one nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+body .section-one nav .buttons {
+  border: 0px none;
+}
+
+body .section-one nav .buttons button {
+  border: .7px solid white;
+  border-radius: 6px;
+}
+
+body .section-one nav .buttons button {
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: .2em;
+  padding-bottom: .2em;
+  background-color: white;
+}
+
+body .section-one nav .buttons button a {
+  color: black;
+  text-decoration: none;
+}
+
+body .section-one nav .buttons #log-in-button {
+  background-color: #00ba73;
+}
+
+body .section-one nav .buttons #log-in-button a {
+  color: white;
+}
+
+body .section-one .parent-container {
+  margin-top: 2.4em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .section-one .parent-container .sojourner-speech {
+  margin-top: 1.5em;
+}
+
+body .section-one .parent-container .sojourner-speech h1 {
+  font-weight: 600;
+  font-size: 2em;
+}
+
+body .section-one .parent-container .sojourner-speech #features {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 10px;
+  gap: 20px;
+  font-weight: 300;
+  font-size: .9em;
+}
+
+@media screen and (max-width: 600px) and (min-width: 280px) {
+  body .section-one {
+    padding-bottom: 11em;
+  }
+  body .section-one nav ul {
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .section-one .buttons {
+    display: none;
+  }
+  body .section-one .iphone-11 {
+    display: none;
+  }
+  body .parent-container {
+    padding-top: 1em;
+  }
+  body .parent-container .sojourner-speech {
+    text-align: center;
+  }
+  body .parent-container .sojourner-speech h1 {
+    font-size: .5em;
+    font-weight: 500;
+  }
+  body .parent-container .sojourner-speech #features {
+    padding-left: 4.8em;
+  }
+}
+
+body .section-two {
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+body .section-two .phones {
+  padding-left: 9em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .section-two .phones #phone-one img {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 700px;
+  width: 700px;
+}
+
+body .section-two .phones #phone-two img {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: -28em;
+  height: 700px;
+  width: 700px;
+}
+
+body .section-two .texts {
+  text-align: center;
+}
+
+body .section-two .texts p {
+  font-weight: 600;
+  font-size: 1.6em;
+}
+
+body .section-two .register-button {
+  margin-top: 1.5em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+body .section-two .register-button button {
+  background-color: #00ba73;
+  padding-left: 7.9em;
+  padding-right: 7.9em;
+  padding-top: .8em;
+  padding-bottom: .8em;
+  border: none;
+  border-radius: 5px;
+}
+
+body .section-two .register-button button a {
+  text-decoration: none;
+  text-align: center;
+  color: white;
+}
+
+body .section-two .achievements {
+  margin-top: 4em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .section-two .achievements h1 {
+  color: #00ba73;
+  font-weight: 700;
+  font-size: 5em;
+}
+
+body .section-two .achievements p {
+  font-weight: 700;
+  font-size: 3em;
+}
+
+body .section-two .achievements .achievement-one h1 {
+  padding-left: .6em;
+}
+
+body .section-two .stores {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 5px;
+  margin-top: 8em;
+}
+
+body .section-two .stores img {
+  width: 400px;
+  height: 125px;
+}
+
+body .section-two .companies-testimonies {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 7em;
+}
+
+body .section-two .companies-testimonies .shells .five-sta {
+  padding-left: 3em;
+  padding-bottom: 1.4em;
+}
+
+body .section-two .companies-testimonies .shells p {
+  padding-bottom: 1em;
+}
+
+body .section-two .companies-testimonies .tescos p {
+  padding-top: .5em;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+body .section-two .companies-testimonies .tescos .tes-star {
+  padding-top: 1em;
+  padding-left: 7em;
+}
+
+@media screen and (max-width: 600px) and (min-width: 280px) {
+  body .section-two {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+  }
+  body .section-two .phones {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-left: 0em;
+    width: 100%;
+  }
+  body .section-two .phones #phone-two img {
+    margin-left: -1em;
+    height: 400px;
+    width: 410px;
+  }
+  body .section-two .phones #phone-one img {
+    height: 400px;
+    width: 400px;
+    margin-left: -1em;
+  }
+  body .section-two .register-button button {
+    padding-left: 5.9em;
+    padding-right: 5.9em;
+    padding-top: 1.2em;
+    padding-bottom: 1.2em;
+    border-radius: 7px;
+  }
+  body .section-two .achievements {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 30px;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body .section-two .achievements p {
+    font-size: 2em;
+  }
+  body .section-two .achievements h1 {
+    font-size: 3em;
+  }
+  body .section-two .achievements .achievement-one h1 {
+    padding-left: 0em;
+  }
+  body .section-two .stores {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 10px;
+    margin-top: 4em;
+  }
+  body .section-two .stores img {
+    width: 200px;
+    height: 60px;
+  }
+  body .section-two .companies-testimonies {
+    margin-top: 4em;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .section-two .companies-testimonies .tescos {
+    margin-top: 2em;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  body .section-two .companies-testimonies .tescos img {
+    width: 50vw;
+  }
+  body .section-two .companies-testimonies .tescos p {
+    padding-top: .7em;
+    font-size: 1em;
+  }
+  body .section-two .companies-testimonies .tescos .tes-star {
+    padding-top: .7em;
+    padding-left: 0em;
+  }
+  body .section-two .companies-testimonies .shells {
+    margin-bottom: .7em;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  body .section-two .companies-testimonies .shells .five-sta {
+    padding-left: 0em;
+    padding-bottom: 1em;
+  }
+  body .section-two .companies-testimonies .shells p {
+    padding-bottom: .7em;
+  }
+}
+
+body .section-three {
+  background-color: #00ba73;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 2em;
+  padding-top: 2em;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-bottom: 2em;
+  text-align: center;
+  font-size: 1.6em;
+  color: white;
+}
+
+body .section-three ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 25px;
+  list-style-type: none;
+}
+
+body .section-three ul a {
+  text-decoration: none;
+  color: white;
+}
+
+body .section-three h3 {
+  margin-top: 2.5em;
+}
+
+body .section-three .social-media-plat {
+  margin-top: 1em;
+}
+
+body .section-three .social-media-plat .social-media-logos {
+  padding-top: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 15px;
+}
+
+body .section-three .social-media-plat .social-media-logos-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 600px) and (min-width: 280px) {
+  .section-three {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 10px;
+  }
+  .section-three ul {
+    display: none;
+    gap: 20px;
+    font-size: .7em;
+  }
+  .section-three h3 {
+    display: none;
+  }
+  .section-three .social-media-plat .social-media-logos {
+    display: none;
+  }
+  .section-three .social-media-plat .social-media-logos-mobile {
+    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 10px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

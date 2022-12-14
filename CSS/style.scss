@@ -1,0 +1,551 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&family=Roboto:wght@300;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+body {
+
+   
+
+    .section-one {
+
+        color: white;
+
+        padding-left: 2em;
+        padding-right: 2em;
+        padding-top: 2em;
+
+        background-color:rgba(0, 186, 115, 1);
+        
+        nav {
+
+            display: flex;
+            justify-content: space-between;
+
+            label {
+             font-weight: 600;
+                a {
+
+                    text-decoration: none;
+                    color: white;
+                }
+            }
+
+            ul {
+
+                display: flex;
+                justify-content: space-between;
+                gap: 30px;
+               
+                li {
+
+                    list-style-type: none;
+                }
+                li a {
+                    
+                    color: white;
+                    text-decoration: none;
+                }
+            }
+
+           .buttons {
+
+            border: 0px none;
+
+            button {
+
+                border: .7px solid white;
+                border-radius: 6px;
+            }
+
+              button  {
+
+               a {
+                color: black;
+                text-decoration: none;
+               }
+               
+                padding-left: 1em;
+                padding-right: 1em;
+                padding-top: .2em;
+                padding-bottom: .2em;
+               
+                background-color: white;
+                
+
+              }
+
+                #log-in-button   {
+
+                    a {
+                        color: white;
+                    }
+
+                background-color:rgba(0, 186, 115, 1);
+                
+              }
+           }
+        }
+
+
+        .parent-container{
+           margin-top: 2.4em;
+            display: flex;
+            justify-content: space-between;
+
+            .sojourner-speech {
+                
+                margin-top: 1.5em;
+                 
+                h1 {
+
+                    font-weight: 600;
+                    font-size: 2em;
+                }
+
+                #features {
+                    display: flex;
+                    padding-top: 10px;
+                    gap: 20px;
+                    font-weight: 300;
+                    font-size: .9em;
+                }
+            }
+        }
+    }
+
+
+    @media screen and (max-width:600px ) and (min-width:280px) {
+
+        .section-one {
+
+            padding-bottom: 11em;
+
+
+            nav {
+
+                ul {
+
+                    display: none;
+
+                    flex-direction: column;
+                }
+            }
+
+            .buttons {
+
+                display: none;
+            }
+
+            .iphone-11 {
+              display: none;
+
+            }
+        }
+
+        .parent-container {
+              padding-top: 1em;
+            .sojourner-speech {
+   
+                h1 {
+    
+                   font-size: .5em;
+                   font-weight: 500;
+                }
+
+
+                text-align: center;
+
+                #features {
+
+                    padding-left: 4.8em;
+                
+                }
+            }
+        }
+
+    }
+
+
+    .section-two {
+
+        padding-left: 2em;
+        padding-right: 2em;
+
+
+        .phones {
+         padding-left: 9em;
+            display: flex;
+            
+
+            #phone-one img {
+              align-items: center;
+                height: 700px;
+                width: 700px;
+            }
+
+            #phone-two img {
+                align-items: center;
+                margin-left: -28em;
+                height: 700px;
+                width: 700px;
+            }
+        }
+
+        .texts {
+
+            text-align: center;
+
+            p {
+                font-weight: 600;  
+                font-size: 1.6em;  
+            }
+            
+        }
+
+        .register-button {
+            margin-top: 1.5em;
+         align-items: center;
+         text-align: center;
+            button {
+              background-color: rgba(0, 186, 115, 1);
+                padding-left:7.9em ;
+                padding-right: 7.9em;
+                padding-top: .8em;
+                padding-bottom: .8em;
+
+                border: none;
+                border-radius: 5px;
+                a {
+                  text-decoration: none;
+                  text-align: center;
+                  color: white;
+                }
+    
+              
+            }
+        }
+        
+
+        .achievements {
+
+           
+            margin-top: 4em;
+            h1 {
+               color: rgba(0, 186, 115, 1);
+                font-weight: 700;
+                font-size: 5em;
+            }
+
+            p {
+                font-weight: 700;
+                font-size: 3em;
+            }
+            display: flex;
+            justify-content: space-between;
+
+            .achievement-one h1{
+                padding-left: .6em;
+            }
+        }
+
+        .stores {
+
+            display: flex;
+            justify-content: space-between;
+            gap: 5px;
+            margin-top: 8em;
+
+            img {
+
+                width: 400px;
+                height: 125px;
+            }
+        }
+        
+
+        .companies-testimonies {
+
+            display: flex;
+            justify-content: space-between;
+            margin-top: 7em;
+
+            .shells {
+
+                
+
+                .five-sta{
+
+                    padding-left: 3em;
+                    padding-bottom: 1.4em;
+                }
+
+                p {
+
+                    padding-bottom: 1em;
+                }
+            }
+
+          .tescos {
+
+           p {
+           padding-top: .5em;
+            font-size: 1.5em;
+            text-align: center;
+           }
+
+           .tes-star {
+            padding-top: 1em;
+              padding-left: 7em;  
+                }
+           }
+          
+            
+        }
+    }
+
+
+    @media screen and (max-width:600px ) and (min-width:280px) {
+
+        .section-two {
+
+            padding-left: 1.5em;
+            padding-right: 1.5em;
+            .phones {
+
+                flex-direction: column;
+                padding-left: 0em;
+                
+                width: 100%;
+                
+                #phone-two img {
+                
+                   
+                    margin-left: -1em;
+                    height: 400px;
+                    width: 410px;
+                    
+
+                }
+
+                #phone-one img {
+                    
+                      height: 400px;
+                      width: 400px;
+                      margin-left: -1em;
+                  }
+            }
+
+            .register-button {
+
+                button {
+               
+                    padding-left:5.9em ;
+                    padding-right: 5.9em;
+                    padding-top: 1.2em;
+                    padding-bottom: 1.2em;
+                    border-radius: 7px;
+              }
+            }
+
+            .achievements {
+
+                flex-direction: column;
+                gap: 30px;
+                text-align: center;
+                align-items: center;
+
+                p {
+
+                    font-size: 2em;
+                }
+
+                h1 {
+
+                    font-size: 3em;
+                }
+
+                .achievement-one h1{
+                    padding-left: 0em;
+                }
+            }
+
+
+            .stores {
+
+                flex-direction: column;
+
+                align-items: center;
+                gap: 10px;
+                margin-top: 4em;
+
+                img {
+
+                    width: 200px;
+                    height: 60px;
+                }
+            }
+
+            .companies-testimonies {
+                margin-top: 4em;
+                flex-direction: column;
+
+                .tescos {
+
+                    margin-top: 2em;
+                    align-items: center;
+                    text-align: center;
+
+                    img {
+
+                        width: 50vw;
+                    }
+
+                    p {
+                        padding-top: .7em;
+                         font-size: 1em;
+                       
+                        }
+             
+                        .tes-star {
+                         padding-top: .7em;
+                           padding-left: 0em;  
+                             }
+
+                }
+
+
+                .shells {
+
+                    margin-bottom: .7em;
+                    align-items: center;
+                    text-align: center;
+
+                  .five-sta {
+
+                    padding-left: 0em;
+                    padding-bottom: 1em;
+                  }
+
+                  p {
+
+                   padding-bottom: .7em;
+                  }
+                }
+    
+            }
+
+        }
+        
+
+    }
+
+
+
+   
+
+
+    .section-three{
+        background-color: rgba(0, 186, 115, 1);
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2em;
+        padding-top: 2em;
+        padding-left: 2em;
+        padding-right: 2em;
+        padding-bottom: 2em;
+        text-align: center;
+        font-size: 1.6em;
+        color: white;
+        ul {
+           display: flex;
+           flex-direction: column;
+            gap: 25px;
+             
+            list-style-type: none;
+
+            a {
+                text-decoration: none;
+                color: white;
+            }
+        }
+
+        h3 {
+
+            margin-top: 2.5em;
+        }
+
+        .social-media-plat {
+
+            margin-top: 1em;
+            
+
+            .social-media-logos {
+                padding-top:2em;
+                display: flex;
+                justify-content: space-between;
+                gap: 15px;
+            }
+
+            .social-media-logos-mobile {
+                display: none;
+            }
+        }
+    }
+    }
+
+
+
+    @media screen and (max-width:600px ) and (min-width:280px) {
+        
+        .section-three {
+                
+            flex-direction: column;
+           gap: 10px;
+           
+
+            ul {
+
+                display: none;
+                gap: 20px;
+              font-size: .7em;
+           
+           }
+
+             h3 {
+
+                display: none;
+            }
+
+            .social-media-plat {
+
+                .social-media-logos {
+
+                    display: none;
+                }
+    
+                  .social-media-logos-mobile {
+                     display: block;
+                     display: flex;
+                    justify-content: space-between;
+                    
+                      width: 10px;
+                  }
+
+           
+         
+             }
+      }
+
+       
+
+        
+
+    
+
+    }
+   
+    
