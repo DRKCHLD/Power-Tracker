@@ -120,6 +120,12 @@ body {
 
     @media screen and (max-width:600px ) and (min-width:280px) {
 
+
+        body {
+
+            padding-left: 1em;
+            padding-right: 1em;
+        }
         .section-one {
 
             padding-bottom: 11em;
@@ -312,6 +318,15 @@ body {
 
         .section-two {
 
+            .texts {
+                    
+                p {
+                    font-size: 1em;
+                    font-weight: 400;
+                }
+                
+              }
+
             padding-left: 1.5em;
             padding-right: 1.5em;
             .phones {
@@ -324,19 +339,21 @@ body {
                 #phone-two img {
                 
                    
-                    margin-left: -1em;
-                    height: 400px;
-                    width: 410px;
+                    margin-left: 1em;
+                    height: 200px;
+                    width: 210px;
                     
 
                 }
 
                 #phone-one img {
                     
-                      height: 400px;
-                      width: 400px;
-                      margin-left: -1em;
+                      height: 200px;
+                      width: 200px;
+                      margin-left: 1em;
                   }
+
+                
             }
 
             .register-button {
@@ -360,7 +377,7 @@ body {
 
                 p {
 
-                    font-size: 1.2em;
+                    font-size: 1.1em;
                 }
 
                 h1 {
@@ -502,18 +519,18 @@ body {
     @media screen and (max-width:600px ) and (min-width:280px) {
         
         .section-three {
-                
+            ul {
+
+                display: none;
+                gap: 10px;
+              font-size: .7em;
+           
+           }  
             flex-direction: column;
            gap: 10px;
            
 
-            ul {
-
-                display: none;
-                gap: 20px;
-              font-size: .7em;
-           
-           }
+          
 
              h3 {
 

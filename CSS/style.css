@@ -112,6 +112,10 @@ body .section-one .parent-container .sojourner-speech #features {
 }
 
 @media screen and (max-width: 600px) and (min-width: 280px) {
+  body body {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
   body .section-one {
     padding-bottom: 11em;
   }
@@ -281,6 +285,10 @@ body .section-two .companies-testimonies .tescos .tes-star {
     padding-left: 1.5em;
     padding-right: 1.5em;
   }
+  body .section-two .texts p {
+    font-size: 1em;
+    font-weight: 400;
+  }
   body .section-two .phones {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -290,14 +298,14 @@ body .section-two .companies-testimonies .tescos .tes-star {
     width: 100%;
   }
   body .section-two .phones #phone-two img {
-    margin-left: -1em;
-    height: 400px;
-    width: 410px;
+    margin-left: 1em;
+    height: 200px;
+    width: 210px;
   }
   body .section-two .phones #phone-one img {
-    height: 400px;
-    width: 400px;
-    margin-left: -1em;
+    height: 200px;
+    width: 200px;
+    margin-left: 1em;
   }
   body .section-two .register-button button {
     padding-left: 5.9em;
@@ -318,7 +326,7 @@ body .section-two .companies-testimonies .tescos .tes-star {
             align-items: center;
   }
   body .section-two .achievements p {
-    font-size: 1.2em;
+    font-size: 1.1em;
   }
   body .section-two .achievements h1 {
     font-size: 3em;
@@ -450,7 +458,7 @@ body .section-three .social-media-plat .social-media-logos-mobile {
   }
   .section-three ul {
     display: none;
-    gap: 20px;
+    gap: 10px;
     font-size: .7em;
   }
   .section-three h3 {
